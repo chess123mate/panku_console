@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://c0y1axyst1ub3"]
 
-[ext_resource type="Script" path="res://addons/panku_console/modules/data_controller/exporter/exporter_2.gd" id="1_0hpei"]
+[ext_resource type="Script" uid="uid://g6i7cdooqg77" path="res://addons/panku_console/modules/data_controller/exporter/exporter_2.gd" id="1_0hpei"]
 [ext_resource type="Theme" uid="uid://bk18yfu0d77wk" path="res://addons/panku_console/res/panku_console_theme.tres" id="1_3uypn"]
 [ext_resource type="PackedScene" uid="uid://cj0urmvj2rtas" path="res://addons/panku_console/modules/data_controller/exporter/row_vec_2.tscn" id="1_v4pbh"]
 [ext_resource type="PackedScene" uid="uid://b4jxqh4ysyodt" path="res://addons/panku_console/modules/data_controller/exporter/row_string.tscn" id="2_87515"]
@@ -12,8 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://bneg4nt6ryuuj" path="res://addons/panku_console/modules/data_controller/exporter/row_float.tscn" id="7_h6vg4"]
 [ext_resource type="PackedScene" uid="uid://dfsypgkiprnp8" path="res://addons/panku_console/modules/data_controller/exporter/row_enum.tscn" id="8_r3qu8"]
 [ext_resource type="PackedScene" uid="uid://b4iurk1ni11v2" path="res://addons/panku_console/modules/data_controller/exporter/row_color.tscn" id="9_scg41"]
-[ext_resource type="PackedScene" uid="uid://ds3hbsvvlvdyw" path="res://addons/panku_console/modules/data_controller/exporter/row_button.tscn" id="10_vt884"]
 [ext_resource type="PackedScene" uid="uid://i2pcctq0i2o3" path="res://addons/panku_console/modules/data_controller/exporter/row_bool.tscn" id="11_0f6sm"]
+[ext_resource type="PackedScene" uid="uid://ds3hbsvvlvdyw" path="res://addons/panku_console/modules/data_controller/exporter/row_button.tscn" id="13_bdfp4"]
 
 [node name="exporter_2" type="Control" node_paths=PackedStringArray("container")]
 clip_contents = true
@@ -74,7 +74,7 @@ layout_mode = 2
 [node name="RowColor" parent="SmoothScrollContainer/HBoxContainer/Control/VBoxContainer" instance=ExtResource("9_scg41")]
 layout_mode = 2
 
-[node name="RowButton" parent="SmoothScrollContainer/HBoxContainer/Control/VBoxContainer" instance=ExtResource("10_vt884")]
+[node name="RowButton" parent="SmoothScrollContainer/HBoxContainer/Control/VBoxContainer" instance=ExtResource("13_bdfp4")]
 layout_mode = 2
 
 [node name="RowBool" parent="SmoothScrollContainer/HBoxContainer/Control/VBoxContainer" instance=ExtResource("11_0f6sm")]
